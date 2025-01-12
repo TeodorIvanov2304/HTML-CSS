@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Aligns the elements in line */
+    gap: 10px;
+}
+
+ul li img{
+    width: 150px;
+    height: auto;
+}
+
+li img{
+    width: 150px;
+    height: auto;
+}

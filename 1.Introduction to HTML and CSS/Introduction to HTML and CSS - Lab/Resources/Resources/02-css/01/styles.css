@@ -1,0 +1,35 @@
+h1{
+    color: darkgreen;
+}
+
+p{
+    font-size: larger;
+}
+
+.highlighted{
+    background-color: aqua;
+}
+
+.highlightedParagraph{
+    background-color:gold;
+}
+
+ul{
+    list-style-type:lower-latin;
+}
+
+li{
+    color:brown;
+}
+
+div{
+    background-color: rgb(175, 238, 180);
+}
+
+#main-title{
+    color: darkviolet;
+}
+
+#special-paragraph{
+    font-style: italic;
+}

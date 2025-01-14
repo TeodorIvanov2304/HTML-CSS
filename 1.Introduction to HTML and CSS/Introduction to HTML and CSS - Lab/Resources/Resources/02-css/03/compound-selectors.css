@@ -1,0 +1,57 @@
+
+
+div#selected{
+    background-color: rgb(210, 210, 230);
+    padding-right: 0;
+}
+
+input[type="text"].specific-class {
+    border-color: rgb(185, 185, 235);
+    padding: 10px;
+}
+
+.class-one.class-two {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.class-one{
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.class-two{
+    font-style:unset;
+    font-variant: small-caps;
+}
+
+
+p.hihlight{
+    font-size: larger;
+    color: blue;
+}
+#special {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#special2 {
+    color: rgb(197, 123, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.important{
+    color: darkviolet;
+    font-family: fantasy;
+}
+
+.important2{
+    color: rgb(0, 14, 211);
+    font-family: fantasy;
+}
+
+.higlightLink{
+    color: greenyellow;
+    font-weight: 500;
+}

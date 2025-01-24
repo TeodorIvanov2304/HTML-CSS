@@ -1,0 +1,46 @@
+
+/* Get everything (*) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: clamp(11px,3vw,16px);
+    line-height: 1.4;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    
+    padding:0 2em;
+    margin:0;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    border-bottom: 0.2rem solid black;
+}
+
+h1 {font-size: 2.4em;}
+h2 {font-size: 2.0em;}
+h3 {font-size: 1.7em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1.0em;}
+
+
+/* The perfect row -- 66ch */
+
+.container{
+    max-width: 66ch;
+    margin:4em auto;
+}

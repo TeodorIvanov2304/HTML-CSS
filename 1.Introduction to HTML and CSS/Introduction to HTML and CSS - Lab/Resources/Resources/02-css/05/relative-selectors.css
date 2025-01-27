@@ -1,0 +1,20 @@
+section p{
+    font-style: italic;
+}
+
+ul.specific > li{
+    list-style: lower-alpha;
+}
+
+article + article{
+    background-color: aquamarine;
+}
+
+h2.specific-h2 ~ p{
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+li.special + li a{
+    color:chartreuse
+}

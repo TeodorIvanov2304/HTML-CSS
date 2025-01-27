@@ -1,0 +1,27 @@
+
+h1,h2,p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(5, 4, 54)
+}
+
+header,section,footer{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+nav a:hover,
+section p:hover,
+footer p:hover{
+    color: rgb(22, 214, 32);
+}
+
+.simple{
+    color: darkorange;
+}
+
+header h1,
+section .content-services,
+footer p {
+    font-family: Arial, sans-serif; 
+    color: rgb(192, 192, 231);
+}

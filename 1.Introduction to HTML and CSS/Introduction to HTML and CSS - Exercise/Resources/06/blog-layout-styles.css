@@ -1,0 +1,9 @@
+a {
+    color: rgb(26, 26, 236);
+}
+
+aside {
+    border : 3px  double rgb(247, 114, 5);
+    margin: 0.5em;
+    padding: 1em;
+  }

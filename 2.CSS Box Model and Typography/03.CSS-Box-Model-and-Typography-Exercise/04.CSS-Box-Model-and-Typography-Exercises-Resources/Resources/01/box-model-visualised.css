@@ -1,0 +1,54 @@
+div {
+    border: 1px dashed #333;
+    padding: 2em;
+    position: relative;
+}
+
+/* Pseudo element */
+div::before {
+    display: block;
+    position: absolute;
+    top: 0.4em;
+    left: 0.7em;
+}
+
+p { 
+    position:absolute;
+    top: 0.3em;
+    left: 0.7em;
+    margin: 0;
+}
+
+.box-model {
+    width: 600px;
+    margin: 40px auto;
+}
+
+.margin {
+    background-color: lightsalmon;
+}
+
+.margin::before {
+    content: 'margin';
+}
+
+.border {
+    background-color: blanchedalmond;
+}
+
+.border::before {
+    content: 'border';
+}
+
+.padding {
+    background-color: lightgreen;
+}
+
+.padding::before {
+    content: 'before';
+}
+
+.content {
+    background-color: lightblue;
+    text-align: center;
+}

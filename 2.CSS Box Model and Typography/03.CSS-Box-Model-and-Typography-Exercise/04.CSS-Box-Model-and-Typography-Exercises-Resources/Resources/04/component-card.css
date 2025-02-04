@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0; 
+
+}
+
+html {
+    box-sizing: border-box;
+    font: 12px/1.4 Verdana, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font:inherit;
+    padding: 2em;
+    background: #eee;
+}
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    background: white;
+    color: #333;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+    border-radius: 0.3em;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card .main strong {
+    display: block;
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+    line-height: 1.1;
+}
+
+.card span, .card img {
+    display: block;
+}
+
+.card .media img {
+    width: 100%;
+    height: auto;
+}
+
+.card .main {
+    padding: 1.5em 2em;
+}
+
+.card .footer {
+    padding: 1.5em 2em;
+    padding-top: 0.5em;     
+}
+
+.card .footer span:nth-child(1) {
+    font-weight: bold;
+}
+
+.card .footer span:nth-child(2) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1em;
+    font-style:italic;
+}
+

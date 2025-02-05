@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4em;
+}
+
+.flex-container {
+    border: 2px solid #666;
+    padding: 2em;
+    display: flex;
+    height: 600px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    /* Flex direction - determines the axis, cross or main*/
+    /* Reverse direction order */
+    /* flex-direction: column; */
+
+
+    /* Justify content */
+    /* Default */
+    /* justify-content: flex-start; */
+
+    /* Goes to the end */
+    /* justify-content: flex-end; */
+
+    /* Center */
+    /* justify-content: center; */
+
+    /* Make even space between */
+    /* justify-content: space-between; */
+
+    /* Make spaces even from both sides */
+    /* justify-content: space-evenly; */
+
+    /* Make spaces even from both sides, without the padding */
+    /* justify-content: space-around; */
+
+
+    /* Align items */
+    /* align-items: flex-end; */
+    align-items: flex-start;
+    /* align-items: center; */
+    /* align-items: stretch; */
+
+
+}
+
+.item {
+    border:2px solid black;
+    padding: 0.5em;
+    background: lightblue;
+    /* Determines the base for grow and shrink */
+    flex-basis: 4em;
+    flex-grow: 1;
+    /* flex-shrink: 2; */
+
+    /* basis + grow = min-width */
+    /* basis + shrink = max-width */
+    /* basis + grow + shrink = new case */
+}
+
+
+/* Grow */
+/* .item.fi-5 {
+    flex-grow: 1;
+} */
+
+.item.fi-2 {
+    flex-grow: 2;
+}
+
+.item.fi-3 {
+    flex-grow: 1;
+}
+
+.item.fi-5 {
+    background: lightpink;
+    /* align-self: flex-end; */
+}

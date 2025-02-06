@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana,sans-serif;
+}
+
+body, div {
+    font:inherit ;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+div.flex-container {
+    width: 400px;
+    padding: 1em;
+    margin: 0.5em;
+    border: 2px solid blue;
+    display: flex;
+}
+
+div.flex-item {
+    border: 2px solid black;
+    padding: 20px;
+    background: #eee;
+}

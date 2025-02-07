@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana,sans-serif;
+}
+
+body, div {
+    font:inherit ;
+}
+
+h1,h2 {
+    padding: 0.2em;
+}
+
+div.flex-container {
+    width: 400px;
+    padding: 1em;
+    margin: 0.5em;
+    border: 2px solid blue;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.gap-row, 
+div.gap-column, 
+div.gap-gap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gap-row {
+    gap: 2em 0;
+}
+
+div.gap-column {
+    gap: 0 2em;
+}
+
+div.gap-gap {
+    gap: 2em;
+}
+
+div.flex-item {
+    border: 2px solid black;
+    padding: 20px;
+    background: #eee;
+}
+
+

@@ -1,0 +1,88 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 Verdana, sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.keyboard-container {
+    background-color: #ccc;
+    border-radius: 0.9em;
+    border:2px solid #ccc;
+    box-shadow: 0 0 0.3em 0 #bbb;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding: 1em;
+}
+
+.keyboard-container .row {
+    display: flex;
+    gap: 0.6em;
+}
+
+.keyboard-container .key {
+    padding: 1em 1.4em; 
+    border: 1px solid darkgray;
+    border-radius: 0.3em;
+    background: #fff;
+    box-shadow: 0 0.2em 0 0 #bbb;
+    text-align: center;
+    position: relative;
+}
+
+/* Hover effect */
+.keyboard-container .key:hover {
+    background: whitesmoke;
+    font-weight: bold;
+}
+
+/* Click effect combination with position:realtive */
+
+.key:active{
+    top: 1px;
+    box-shadow: 0 0.05em 0 0 #bbb;
+}
+
+.keyboard-container .key.special {
+    background: #eee;
+}
+
+.keyboard-container .key.special.grow {
+    flex: 1 1 auto;
+}
+
+.key.enter::after {
+    border-bottom-right-radius: 0;
+}
+
+
+/* Attach pseudo element to enter */
+.key.enter::after {
+    content: '';
+    display: block;
+    width: 9em;
+    height: calc(4.4em + 1px);
+    position: absolute;
+    right: -1px;
+    top: calc(100% - 1px);
+    border: inherit;
+    border-top: 0;
+    border-radius: 0.3em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #eee;
+    box-shadow: inherit
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with forms Demo</title>
+    <link rel="stylesheet" href="working-with-forms.css">
+</head>
+
+<body>
+
+    <h1>Form Elements</h1>
+
+    <!-- Search form -->
+    <form action="https://google.com/search" method="get">
+        <label for="search">Search</label>
+        <input type="text" name="q" id="search">
+        <button>Search</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter name.."><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <button>Login</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+        <fieldset>
+            <legend>Happy or Sad?</legend>
+            <input type="radio" name="happy-or-sad" id="happy">
+            <label for="happy">Happy</label>
+
+            <input type="radio" name="happy-or-sad" id="neutral">
+            <label for="neutral">Neutral</label>
+
+            <input type="radio" name="happy-or-sad" id="sad">
+            <label for="sad">Sad</label>
+        </fieldset>
+        </p>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+        <fieldset>
+            <legend>Good ,Bad or Alful?</legend>
+            <input type="checkbox" name="good" id="good">
+            <label for="happy">Good</label>
+
+            <input type="checkbox" name="bad" id="bad">
+            <label for="neutral">Bad</label>
+
+            <input type="checkbox" name="alful" id="alful">
+            <label for="sad">Alful</label>
+
+            <button>Submit</button>
+        </fieldset>
+        </p>
+    </form>
+
+    <hr>
+
+
+    <form action="#" method="get">
+        <p>
+            <label for="color">Favorite color</label>
+            <input type="color" name="color" id="id">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="file">Choose file</label>
+            <input type="file" name="file" id="file" required>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="number">Choose number</label>
+            <input type="number" name="number" id="number" required>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </p>
+
+        <button>Submit</button>
+
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="date">Date</label>
+            <select name="country" id="country">
+                <option value="bulgaria">Bulgaria</option>
+                <option value="united-kingdom">UK</option>
+                <option value="greece">Greece</option>
+            </select>
+        </p>
+
+        <button>Submit</button>
+
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+        <p>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </p>
+
+        <button>Submit</button>
+
+    </form>
+
+    <hr>
+
+    <form action="#" method="get">
+
+
+        <fieldset>
+            <legend>Audio settings</legend>
+        </fieldset>
+
+
+        <p>
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+            <label for="volume">Volume</label>
+
+            <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+            <label for="cowbell">Cowbell</label>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

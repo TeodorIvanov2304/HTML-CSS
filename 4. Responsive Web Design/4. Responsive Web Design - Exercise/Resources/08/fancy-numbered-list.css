@@ -1,0 +1,63 @@
+.fancy-numbered-list {
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fancy-numbered-list li {
+    /* Responsive part */
+    flex: 1 1 300px;
+
+    display: block;
+    box-shadow: -0.2em 0.2em 0.5em 0 rgb(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    position: relative;
+}
+
+.fancy-numbered-list li span {
+    display: block;
+}
+
+.fancy-numbered-list li .title {
+    font-weight: bold;
+}
+
+.fancy-numbered-list li::after {
+    content: '01';
+    display: inline-block;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    padding: 0.4em 1.2em;
+    box-shadow: -0.2em 0.2em 0 0 rgb(0, 0, 0, 0.1);
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fancy-numbered-list li:nth-child(2)::after
+{
+    content: '02';
+}
+
+.fancy-numbered-list li:nth-child(3)::after
+{
+    content: '03';
+}
+
+.fancy-numbered-list li:nth-child(4)::after
+{
+    content: '04';
+}
+
+.fancy-numbered-list li:nth-child(5)::after
+{
+    content: '05';
+}

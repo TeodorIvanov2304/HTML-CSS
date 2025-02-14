@@ -1,0 +1,56 @@
+.container {
+    width: 80vw;
+    padding: 1em;
+    margin: 2em;
+    max-width: 60em;
+}
+
+form > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+form > .field:nth-child(1) {
+    flex-basis: 10ch;
+}
+
+form > button:nth-child(2) {
+    flex-basis: 15ch;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.field {
+    padding: 0;
+}
+
+.field label {
+    display: none;
+    
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    background: #eee;
+    border: none;
+    line-height: 1;
+    padding: 1em 1.5em;
+    border-radius: 0.2em;
+}
+
+button {
+    display: block;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2em;
+    border: none;
+    padding: 1em 1.5em;
+}
+
+

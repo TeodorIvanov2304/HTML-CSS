@@ -1,0 +1,36 @@
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+code {
+    display: block;
+    padding: 2em 2em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    overflow: auto;
+    background: #ddd;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"] {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus {
+    border-color:#090;
+}

@@ -1,0 +1,112 @@
+/* span {
+    color:red;
+    font-weight: bold;
+} */
+
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    /* Create the grey line with border */
+    border-bottom: 1px solid #ccc;
+
+    /* Wiht display: inline-block resize the border with the size of the text */
+    display:inline-block;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    /* Animation when typing */
+    transition: translate 0.3s ease-in;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.8em 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="password"]:focus {
+    border-color: orange;
+}
+
+input[type="email"]:user-invalid,
+input[type="password"]:user-invalid,
+input[type="password"]:user-invalid {
+    border-color: red;
+}
+
+.field input:user-invalid ~ label {
+    border-color: red;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2em;
+    padding: 0.8em 1em;
+}
+
+.field {
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+}
+
+.field .icon {
+    position: absolute;
+    right: 0;
+    top:  0;
+}
+
+.field label {
+    order: -1;
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+}
+
+.field input::placeholder {
+    color: transparent;
+
+}
+
+.field input:not(:placeholder-shown) ~ label {
+    translate: 0 -1.5em;
+}
+
+.field input:required ~ label::after {
+    content: '*';
+    color: red;
+    margin-left: 0.3em;
+}
+
+.field .helper {
+    display: block;
+    font-size: 0.85em;
+    opacity: 0.7;
+    padding: 0.1em 0 0 0.2em;
+}
+
+.container {
+    width: 100vw;
+    max-width: 25em;
+}
